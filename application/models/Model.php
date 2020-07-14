@@ -53,4 +53,12 @@ function update_todo($id,$data){
 
 // D Delete
 
+function delete_todo($id){
+
+  $this->db->where('id',$id);
+  $this->db->delete('todo');
+}
+
+
+
 }
