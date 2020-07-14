@@ -11,16 +11,21 @@ class Model extends CI_Model {
 // R Read
 
 function read_todos(){
-  $query= $this->db->query('SELECT * FROM todo');
+
+  $this->db->select('*');
+  $this->db->from('todo');
+  $query= $this->db->get();
 
   if ($query->num_rows() > 0) {
-    foreach ($$query->result() as $row) {
+    foreach ($query->result() as $row) {
       $data[] = $row;
     }
 
     return $data;
   }
 }
+
+
 
 //U Update
 
