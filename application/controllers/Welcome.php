@@ -21,6 +21,7 @@ class Welcome extends CI_Controller {
 	public function index()
 	{
 		print_r($this->model->read_todos());
+		print_r($this->model->read_todos(1));
 		$this->load->view('welcome_message');
 	}
 }
