@@ -25,7 +25,13 @@ function read_todos(){
   }
 }
 
-
+function read_todo($id){
+  $this->db->select('*');
+  $this->db->from('todo');
+  $this->db->where('id',$id);
+  $query= $this->db->get()->result();
+  return $query[0];
+}
 
 //U Update
 
