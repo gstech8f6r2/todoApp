@@ -30,7 +30,13 @@ function read_todo($id){
   $this->db->from('todo');
   $this->db->where('id',$id);
   $query= $this->db->get()->result();
-  return $query[0];
+
+  if ($query) {
+    return $query[0];
+  }else {
+    return null;
+  }
+
 }
 
 //U Update
