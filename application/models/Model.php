@@ -46,6 +46,11 @@ function read_todo($id){
 
 //U Update
 
+function update_todo($id,$data){
+  $this->db->where('id',$id);
+  $this->db->update('todo',$data);
+}
+
 // D Delete
 
 }
