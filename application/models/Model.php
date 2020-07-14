@@ -8,6 +8,11 @@ class Model extends CI_Model {
 
 // C create
 
+function create_todo($data){
+  $this->db->insert('todo',$data);
+}
+
+
 // R Read
 
 function read_todos(){
