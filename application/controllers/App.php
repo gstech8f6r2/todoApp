@@ -6,8 +6,8 @@ class App extends CI_Controller {
 
   function index(){
     echo "Ciao Giacomo! questa e una funzione di default chiamata index!!";
-    $this->load->view('list');
-
+    $data['todos']= $this->model->read_todos();
+    $this->load->view('list',$data);
   }
 
   function anotherfunction(){

@@ -239,6 +239,8 @@ color: #ddd;
 </head>
 <body>
 
+  <?php print_r($todos); ?>
+
   <section>
     <div class="">
       <form class="" action="" method="post">
@@ -249,6 +251,7 @@ color: #ddd;
 
     <div class="">
       <ul>
+        <?php foreach ($todos as $todo) : ?>
 
         <li>
           <div class="">
@@ -257,7 +260,7 @@ color: #ddd;
           </div>
           <div class="">
             <!-- todo -->
-            <p>Primo Todo</p>
+            <p><?php echo $todo->text; ?></p>
           </div>
           <div class="">
             <!-- btn -->
@@ -271,6 +274,7 @@ color: #ddd;
             <i class="fa fa-times"></i></a>
           </div>
         </li>
+      <?php endforeach; ?>
 
         <li class="done">
           <div class="">
@@ -295,27 +299,7 @@ color: #ddd;
           </div>
         </li>
 
-        <li>
-          <div class="">
-            <!-- check -->
-            <a href="#"></a>
-          </div>
-          <div class="">
-            <!-- todo -->
-            <p>Primo Todo</p>
-          </div>
-          <div class="">
-            <!-- btn -->
 
-            <!--modifica-->
-            <a href="#">
-            <i class="fa fa-pencil"></i>
-          </a>
-            <!--cancellazione-->
-            <a href="#">
-            <i class="fa fa-times"></i></a>
-          </div>
-        </li>
 
 
       </ul>
