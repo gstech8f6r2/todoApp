@@ -239,11 +239,11 @@ color: #ddd;
 </head>
 <body>
 
-  
+
 
   <section>
     <div class="">
-      <form class="" action="" method="post">
+      <form class="" action="<?php echo site_url('app/new_todo'); ?>" method="post">
         <input type="text" name="todo" value="">
         <button type="submit">Save</button>
       </form>
