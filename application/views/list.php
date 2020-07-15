@@ -249,6 +249,7 @@ color: #ddd;
 
     <div class="">
       <ul>
+
         <li>
           <div class="">
             <!-- check -->
@@ -270,6 +271,53 @@ color: #ddd;
             <i class="fa fa-times"></i></a>
           </div>
         </li>
+
+        <li class="done">
+          <div class="">
+            <!-- check -->
+            <a href="#">
+            <i class="fa fa-check"></i></a>
+          </div>
+          <div class="">
+            <!-- todo -->
+            <p>Primo Todo</p>
+          </div>
+          <div class="">
+            <!-- btn -->
+
+            <!--modifica-->
+            <a href="#">
+            <i class="fa fa-pencil"></i>
+          </a>
+            <!--cancellazione-->
+            <a href="#">
+            <i class="fa fa-times"></i></a>
+          </div>
+        </li>
+
+        <li>
+          <div class="">
+            <!-- check -->
+            <a href="#"></a>
+          </div>
+          <div class="">
+            <!-- todo -->
+            <p>Primo Todo</p>
+          </div>
+          <div class="">
+            <!-- btn -->
+
+            <!--modifica-->
+            <a href="#">
+            <i class="fa fa-pencil"></i>
+          </a>
+            <!--cancellazione-->
+            <a href="#">
+            <i class="fa fa-times"></i></a>
+          </div>
+        </li>
+
+
       </ul>
     </div>
 
