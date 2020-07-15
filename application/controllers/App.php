@@ -6,10 +6,14 @@ class App extends CI_Controller {
 
   function index(){
     echo "Ciao Giacomo! questa e una funzione di default chiamata index!!";
+    $this->load->view('list');
+
   }
 
   function anotherfunction(){
     echo "Hello world from page two! chiamata da anotherfunction()";
   }
+
+
 
 }
