@@ -239,7 +239,7 @@ color: #ddd;
 </head>
 <body>
 
-  <?php print_r($todos); ?>
+  
 
   <section>
     <div class="">
@@ -253,10 +253,14 @@ color: #ddd;
       <ul>
         <?php foreach ($todos as $todo) : ?>
 
-        <li>
+        <li class="<?php if($todo->completed){echo "done";} ?>">
           <div class="">
             <!-- check -->
-            <a href="#"></a>
+            <a href="#">
+              <?php if($todo->completed) : ?>
+                <i class="fa fa-check"></i>
+              <?php endif; ?>
+            </a>
           </div>
           <div class="">
             <!-- todo -->
@@ -275,29 +279,6 @@ color: #ddd;
           </div>
         </li>
       <?php endforeach; ?>
-
-        <li class="done">
-          <div class="">
-            <!-- check -->
-            <a href="#">
-            <i class="fa fa-check"></i></a>
-          </div>
-          <div class="">
-            <!-- todo -->
-            <p>Primo Todo</p>
-          </div>
-          <div class="">
-            <!-- btn -->
-
-            <!--modifica-->
-            <a href="#">
-            <i class="fa fa-pencil"></i>
-          </a>
-            <!--cancellazione-->
-            <a href="#">
-            <i class="fa fa-times"></i></a>
-          </div>
-        </li>
 
 
 
